@@ -1,0 +1,29 @@
+{
+	"name": "cbl/laravel-vue",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "cbl",
+			"email": "lennart.carbe@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Laravel\\Vue\\": "src/"
+		},
+		"files": [
+			"src/Support/helpers.php"
+		]
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Laravel\\Vue\\VueServiceProvider"
+			],
+			"aliases": {
+				"Vue": "Laravel\\Vue\\Support\\Vue"
+			}
+		}
+	}
+}
